@@ -22,7 +22,7 @@ public class TestaIntegracao {
         var service = new OpenAiService(chave);
 
         var completionRequest = ChatCompletionRequest.builder()
-                .model("gpt-4")
+                .model("gpt-3.5-turbo")
                 .messages(Arrays.asList(
                         new ChatMessage(ChatMessageRole.USER.value(), user),
                         new ChatMessage(ChatMessageRole.SYSTEM.value(), system)
